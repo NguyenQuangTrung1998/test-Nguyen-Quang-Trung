@@ -3,7 +3,7 @@
    <h1>Home</h1>
   <div class="showInfo" 
   v-for="(x,index) in data"
-  @click="detail(index)"
+  @click="detail(x)"
    v-bind:key="index">
     <h3>
       Title: {{x.title}}
@@ -25,8 +25,8 @@ export default {
     }
   },
   methods:{
-    detail(index){
-      this.$router.push('/DetailBlog/'+index);
+    detail(x){
+      this.$router.push('/DetailBlog/'+'title:'+' '+x.title +' '+'description:'+' '+ x.description);
     }
   }
 }
