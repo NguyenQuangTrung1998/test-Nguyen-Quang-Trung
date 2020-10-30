@@ -4,7 +4,7 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
     state:{
         listBlog:[
-            {title:'trung',description:'hiiiii'}
+            { title:'travel',description:'abc'}
         ]
     },
     mutations:{

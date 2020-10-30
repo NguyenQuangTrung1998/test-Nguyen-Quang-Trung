@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 export const router = new VueRouter({
    mode:'history',
    routes:[
-      {path:'/Home', name:'home', component: Home},
+      {path:'/', name:'home', component: Home},
       {path:'/NewBlog',name:'newblog', component: NewBlog},
       {path:'/DetailBlog/:id',name:'detail',component: DetailBlog}
    ]

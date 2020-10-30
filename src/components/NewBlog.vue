@@ -4,8 +4,8 @@
        New Blog
    </h1>
    <div class="blog">
-     <input type="text" placeholder="Title" v-model="data.title"/>
-     <textarea id="text" placeholder="Description" v-model="data.description"></textarea>
+     <input id="title" type="text" placeholder="Title" v-model="data.title"/>
+     <textarea  id="text" placeholder="Description" v-model="data.description"></textarea>
    </div>
    <button @click="add">Post</button>
    
@@ -23,7 +23,7 @@ export default {
   methods:{
     add(){
       if(this.data.title===''){
-        alert('Wrong title')
+        alert('Wrong title');
         return;
       }
       if(this.data.description===''){
